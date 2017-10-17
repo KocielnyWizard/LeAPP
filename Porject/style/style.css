@@ -1,0 +1,334 @@
+
+@font-face {
+    font-family: 'arial_rounded_mt_boldbold';
+    src: url('fonts/arlrdbd-webfont.woff2') format('woff2'),
+         url('fonts/arlrdbd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+        font-family: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+        text-align: center;
+        
+      
+}
+
+
+.icon-small
+{
+    height:18px;
+    margin:0;
+	padding:0;
+}
+
+.icon-medium
+{
+    height:22px;
+	margin:0;
+	padding:0;
+}
+
+
+.navbar {
+   
+    background-color: white;
+}
+
+.nav{
+    transition: all 0.3s ease !important;
+}
+
+.nav a {
+    opacity: 1;
+}
+
+.nav a:hover{
+    opacity: 0.5;
+}
+
+.nav a.active{
+    opacity: 0.6;
+}
+
+.line1{
+    padding-top: 7% ;
+}
+
+.logo{
+    display: block;
+    
+}
+
+.logo p{
+    
+    font-family: 'arial_rounded_mt_boldbold', sans-serif !important;
+    font-size: 20px !important;
+    color: #54545b !important;
+    text-align: center; 
+    padding-right: 0;
+    padding-left: 4%;
+    
+}
+
+.logo h3{
+    font-family: 'arial_rounded_mt_boldbold', sans-serif !important;
+    font-size: 30px !important;
+    color: #373841 !important;
+    text-align: center;
+    
+}
+
+.verticalBar{
+    height: 230px;
+    border-left: 5px rgba(12, 155, 243, 0.97) solid;
+    margin-left: 30%;
+    font-family: 'arial_rounded_mt_boldbold', sans-serif;
+    color: rgba(12, 155, 243, 0.97);
+    transition: all 0.3s ease;
+}
+
+.verticalBar h4{
+    padding-left: 0;
+    padding-right: 60%;
+}
+.verticalBar h5{
+    padding-left: 0;
+    padding-right: 81%;
+}
+
+a {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.sm h4{
+    text-align: center;
+    font-family: 'arial_rounded_mt_boldbold', sans-serif;
+    color: rgba(12, 155, 243, 0.97);
+    font-size: 15px;
+    padding-top: 5%
+
+
+}
+
+.sm i{
+    padding-right: 2%;
+}
+
+.smartphone {
+    margin-top: 10%;
+    transition: all 0.3s ease !important;
+    padding-bottom: 7%;
+}
+
+.sm {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.sm:hover{
+    opacity: 0.5;
+}
+
+
+
+.laptop {
+margin-top: 7%;
+transition: all 0.3s ease !important;
+padding-bottom: 7%;
+}
+
+ .lp {
+     opacity: 1;
+ }
+
+ .lp:hover {
+     opacity: 0.5;
+ }
+
+h3{
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'arial_rounded_mt_boldbold', sans-serif;
+    color: rgba(12, 155, 243, 0.97);
+}
+
+h4{
+    margin-bottom: 100px;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'arial_rounded_mt_boldbold', sans-serif;
+    color: rgba(12, 155, 243, 0.97);
+}
+
+h4 a{
+    text-decoration: none;
+    transition: all 0.3s ease !important;
+    opacity: 0.4;
+    
+}
+
+h4 a:hover{
+    opacity: 1;
+}
+
+.button {
+
+    
+    display: inline-block;
+    margin: 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow:    0 8px 0 rgba(12, 155, 243, 0.97), 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 rgba(12, 155, 243, 0.97), 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 rgba(12, 155, 243, 0.97), 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 50px;
+    color: #fff;
+    
+
+}
+
+.button span {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: rgba(12, 155, 243, 0.97);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(164, 158, 249, 0.8)), to(hsla(338, 90%, 70%, .2)));
+    background-image: -webkit-linear-gradient(rgba(158, 167, 249, 0.8), hsla(338, 90%, 70%, .2));
+    background-image: -moz-linear-gradient(rgba(193, 158, 249, 0.8), hsla(338, 90%, 70%, .2));
+    background-image: -o-linear-gradient(rgba(185, 158, 249, 0.8), hsla(338, 90%, 70%, .2));
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    font-family: 'Pacifico', Arial, sans-serif;
+    line-height: 1;
+    text-shadow: 0 -1px 1px rgba(12, 155, 243, 0.97);
+    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+.button:hover span {
+    background-color: rgba(12, 155, 243, 0.97);
+    text-shadow: 0 -1px 1px rgba(12, 155, 243, 0.97), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+.button:active, .button:focus {
+    -webkit-box-shadow:    0 8px 0 #97a6fa, 0 12px 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 8px 0 #97a6fa, 12px 10px rgba(0, 0, 0, .3);
+    box-shadow:    0 8px 0 #97a6fa, 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+.button:active span {
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
+.hor-line{
+  
+    width: 600px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(12, 155, 243, 0.97);
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.2;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    
+    -webkit-box-shadow:     0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow:  0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow:  0 7px 20px rgba(0, 0, 0, .35);
+  
+}
+
+.laptop{
+    padding-bottom: 1%;
+}
+
+.tb{
+    padding-bottom: 4%;
+}
+
+#end{
+    width: 1000px;
+    height: 1pc;
+    margin: 0 auto;
+
+    margin-bottom: 7%;
+}
+
+#leap{
+    font-size: 50px;
+    font-family: 'Pacifico','arial_rounded_mt_boldbold';
+    margin-bottom: 10%;
+    color: rgba(12, 155, 243, 0.97);
+}
+
+.verticalBar1{
+    height: 75px;
+    border-left: 5px rgba(12, 155, 243, 0.97) solid;
+    margin-left: 30%;
+    font-family: 'arial_rounded_mt_boldbold', sans-serif;
+    color: rgba(12, 155, 243, 0.97);
+    transition: all 0.3s ease;
+    margin-bottom: 7%;
+}
+
+.smartDW{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'arial_rounded_mt_boldbold';
+    margin-top: 10%;
+}
+
+.hor-line-apps{
+
+    width: 800px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(12, 155, 243, 0.97);
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.2;
+    margin-bottom: 10%;
+    
+    -webkit-box-shadow:     0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow:  0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow:  0 7px 20px rgba(0, 0, 0, .35);
+}
+
+.faq-h {
+    
+    font-size: 35px;
+    margin: 0 auto;
+    font-family: 'arial_rounded_mt_boldbold';
+    color: rgba(12, 155, 243, 0.97);
+    padding-right: 4%;
+    padding-top: 7%; 
+}
+
+.general {
+    margin-top: 7%;
+}
+
+.gen{
+    margin-top: 7%;
+    margin-left: 13%;
+}

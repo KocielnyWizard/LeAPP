@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign In/Up</title>
+
+
+
+    <!-- linking to bootstrap css library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- linking to cloudfare css library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style/signInUp.css">
+
+    <script>
+      
+          //java script code for langauge selector starts here.
+      $(document).ready(function(){
+          var itaImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Italien.gif";
+        var engImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Grossbritanien.gif";
+      var deuImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Deutschland.gif";
+      var fraImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Frankreich.gif";
+  
+      var imgBtnSel = $('#imgBtnSel');
+      var imgBtnIta = $('#imgBtnIta');
+      var imgBtnEng = $('#imgBtnEng');
+      var imgBtnDeu = $('#imgBtnDeu');
+      var imgBtnFra = $('#imgBtnFra');
+  
+      var imgNavSel = $('#imgNavSel');
+      var imgNavIta = $('#imgNavIta');
+      var imgNavEng = $('#imgNavEng');
+      var imgNavDeu = $('#imgNavDeu');
+      var imgNavFra = $('#imgNavFra');
+  
+      var spanNavSel = $('#lanNavSel');
+      var spanBtnSel = $('#lanBtnSel');
+  
+      imgBtnSel.attr("src",itaImgLink);
+      imgBtnIta.attr("src",itaImgLink);
+      imgBtnEng.attr("src",engImgLink);
+      imgBtnDeu.attr("src",deuImgLink);
+      imgBtnFra.attr("src",fraImgLink);
+  
+      imgNavSel.attr("src",itaImgLink);
+      imgNavIta.attr("src",itaImgLink);
+      imgNavEng.attr("src",engImgLink);
+      imgNavDeu.attr("src",deuImgLink);
+      imgNavFra.attr("src",fraImgLink);
+  
+      $( ".language" ).on( "click", function( event ) {
+        var currentId = $(this).attr('id');
+  
+        if(currentId == "navIta") {
+          imgNavSel.attr("src",itaImgLink);
+          spanNavSel.text("ITA");
+        } else if (currentId == "navEng") {
+          imgNavSel.attr("src",engImgLink);
+          spanNavSel.text("ENG");
+        } else if (currentId == "navDeu") {
+          imgNavSel.attr("src",deuImgLink);
+          spanNavSel.text("DEU");
+        } else if (currentId == "navFra") {
+          imgNavSel.attr("src",fraImgLink);
+          spanNavSel.text("FRA");
+        }
+  
+        if(currentId == "btnIta") {
+          imgBtnSel.attr("src",itaImgLink);
+          spanBtnSel.text("ITA");
+        } else if (currentId == "btnEng") {
+          imgBtnSel.attr("src",engImgLink);
+          spanBtnSel.text("ENG");
+        } else if (currentId == "btnDeu") {
+          imgBtnSel.attr("src",deuImgLink);
+          spanBtnSel.text("DEU");
+        } else if (currentId == "btnFra") {
+          imgBtnSel.attr("src",fraImgLink);
+          spanBtnSel.text("FRA");
+        }
+        
+      });
+  });
+  //java script code for langauge selector ends here.
+      </script>
+
+</head>
+<body>
+  
+<!-- navaber starts here -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div id="navbar" class="navbar-collapse collapse navbar-right">
+    
+  <ul class="nav navbar-nav" style="font-family: 'arial_rounded_mt_boldbold';">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="" alt="" class="img-thumbnail icon-small"><span id="lanNavSel">ITA</span><span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" style="color: rgba(12, 155, 243, 0.97);">
+<li><a id="navIta" href="#" class="language"><img id="imgNavIta" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavIta">Italiano</span></a></li>
+<li><a id="navDeu" href="#" class="language"> <img id="imgNavDeu" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavDeu">Deutch</span></a></li>
+<li><a id="navFra" href="#" class="language"><img id="imgNavFra" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavFra">Francais</span></a></li>
+<li><a id="navEng" href="#" class="language"><img id="imgNavEng" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavEng">English</span></a></li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+    <ul class="nav navbar-nav">
+      <li><a class="active" href="#" style="color: rgba(12, 155, 243, 0.97);">Home</a></li>
+      <li><a href="#" style="color: rgba(12, 155, 243, 0.97);">FAQ</a></li>
+      <li><a href="#" style="color: rgba(12, 155, 243, 0.97);">APPs</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="padding-right: 5%;">
+      <li><a href="#"><span style="color: rgba(12, 155, 243, 0.97);" class="fa fa-facebook"></span></a></li>
+      <li><a href="#"><span style="color: rgba(12, 155, 243, 0.97);" class="fa fa-twitter"></span></a></li>
+    </ul>
+  </div>
+</nav> <!-- end of navbar -->
+                                        <div id="successful_login" class="fix-middle">
+                                            <div class="container text-center">
+                                              <h1>Welcome back to the internet!</h1>
+                                              <p>You've successfully managed to log into a nonexistant account in order to test a login dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+                                            </div>
+                                          </div>
+                                          <div id="successful_registration" class="fix-middle">
+                                            <div class="container text-center">
+                                              <h1>Welcome to the internet!</h1>
+                                              <p>You've successfully managed to register for a nonexistant account in order to test a registration dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+                                            </div>
+                                          </div>
+                                          
+                                          <div id="dialog" class="dialog dialog-effect-in">
+                                            <div class="dialog-front">
+                                              <div class="dialog-content">
+                                                <form id="login_form" class="dialog-form" action="" method="POST">
+                                                  <fieldset>
+                                                    <legend>Log in</legend>
+                                                    <div class="form-group">
+                                                      <label for="user_username" class="control-label">Username:</label>
+                                                      <input type="text" id="user_username" class="form-control" name="user_username" autofocus/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="user_password" class="control-label">Password:</label>
+                                                      <input type="password" id="user_password" class="form-control" name="user_password"/>
+                                                    </div>
+                                                    <div class="text-center pad-top-20">
+                                                      <p>Have you forgotten your<br><a href="#" class="link"><strong>username</strong></a> or <a href="#" class="link"><strong>password</strong></a>?</p>
+                                                    </div>
+                                                    <div class="pad-top-20 pad-btm-20">
+                                                      <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue">
+                                                    </div>
+                                                    <div class="text-center">
+                                                      <p>Do you wish to register<br> for <a href="#" class="link user-actions"><strong>a new account</strong></a>?</p>
+                                                    </div>
+                                                  </fieldset>
+                                                </form>
+                                              </div>
+                                            </div>
+                                            <div class="dialog-back">
+                                              <div class="dialog-content">
+                                                <form id="register_form" class="dialog-form" action="" method="POST">
+                                                  <fieldset>
+                                                    <legend>Register</legend>
+                                                    <div class="form-group">
+                                                      <label for="user_username" class="control-label">Username:</label>
+                                                      <input type="text" id="user_username" class="form-control" name="user_username"/> 
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="user_password" class="control-label">Password:</label>
+                                                      <input type="password" id="user_password" class="form-control" name="user_password"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="user_cnf_password" class="control-label">Confirm password:</label>
+                                                      <input type="password" id="user_cnf_password" class="form-control" name="user_cnf_password"/>
+                                                    </div>
+                                                    <div class="form-group pad-top-20 form-group-checkbox">
+                                                      <div class="checkbox">
+                                                        <label>
+                                                          <input type="checkbox" id="user_terms" name="user_terms">
+                                                          I have read and I agree with the Terms and Conditions
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="pad-btm-20">
+                                                      <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue"/>
+                                                    </div>
+                                                    <div class="text-center">
+                                                      <p>Return to <a href="#" class="link user-actions"><strong>log in page</strong></a>?</p>
+                                                    </div>
+                                                  </fieldset>
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                                          
+                                              <script  src="js/index.js"></script>
+</body>
+</html>

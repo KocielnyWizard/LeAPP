@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- linking to bootstrap css library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/footer.css">
+
+<!-- linking to cloudfare css library for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- linking to w3 css library-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>APPS</title>
+
+    <script>
+    
+        //java script code for langauge selector starts here.
+    $(document).ready(function(){
+        var itaImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Italien.gif";
+    	var engImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Grossbritanien.gif";
+		var deuImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Deutschland.gif";
+		var fraImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Frankreich.gif";
+
+		var imgBtnSel = $('#imgBtnSel');
+		var imgBtnIta = $('#imgBtnIta');
+		var imgBtnEng = $('#imgBtnEng');
+		var imgBtnDeu = $('#imgBtnDeu');
+		var imgBtnFra = $('#imgBtnFra');
+
+		var imgNavSel = $('#imgNavSel');
+		var imgNavIta = $('#imgNavIta');
+		var imgNavEng = $('#imgNavEng');
+		var imgNavDeu = $('#imgNavDeu');
+		var imgNavFra = $('#imgNavFra');
+
+		var spanNavSel = $('#lanNavSel');
+		var spanBtnSel = $('#lanBtnSel');
+
+		imgBtnSel.attr("src",itaImgLink);
+		imgBtnIta.attr("src",itaImgLink);
+		imgBtnEng.attr("src",engImgLink);
+		imgBtnDeu.attr("src",deuImgLink);
+		imgBtnFra.attr("src",fraImgLink);
+
+		imgNavSel.attr("src",itaImgLink);
+		imgNavIta.attr("src",itaImgLink);
+		imgNavEng.attr("src",engImgLink);
+		imgNavDeu.attr("src",deuImgLink);
+		imgNavFra.attr("src",fraImgLink);
+
+		$( ".language" ).on( "click", function( event ) {
+			var currentId = $(this).attr('id');
+
+			if(currentId == "navIta") {
+				imgNavSel.attr("src",itaImgLink);
+				spanNavSel.text("ITA");
+			} else if (currentId == "navEng") {
+				imgNavSel.attr("src",engImgLink);
+				spanNavSel.text("ENG");
+			} else if (currentId == "navDeu") {
+				imgNavSel.attr("src",deuImgLink);
+				spanNavSel.text("DEU");
+			} else if (currentId == "navFra") {
+				imgNavSel.attr("src",fraImgLink);
+				spanNavSel.text("FRA");
+			}
+
+			if(currentId == "btnIta") {
+				imgBtnSel.attr("src",itaImgLink);
+				spanBtnSel.text("ITA");
+			} else if (currentId == "btnEng") {
+				imgBtnSel.attr("src",engImgLink);
+				spanBtnSel.text("ENG");
+			} else if (currentId == "btnDeu") {
+				imgBtnSel.attr("src",deuImgLink);
+				spanBtnSel.text("DEU");
+			} else if (currentId == "btnFra") {
+				imgBtnSel.attr("src",fraImgLink);
+				spanBtnSel.text("FRA");
+			}
+			
+		});
+});
+//java script code for langauge selector ends here.
+    </script>
+
+</head>
+<body>
+    
+<!-- Navigation bar starts here -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div id="navbar" class="navbar-collapse collapse navbar-right">
+    
+  <ul class="nav navbar-nav" style="font-family: 'arial_rounded_mt_boldbold';">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="" alt="" class="img-thumbnail icon-small"><span id="lanNavSel">ITA</span><span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" style="color: rgba(12, 155, 243, 0.97);">
+<li><a id="navIta" href="#" class="language"><img id="imgNavIta" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavIta">Italiano</span></a></li>
+<li><a id="navDeu" href="#" class="language"> <img id="imgNavDeu" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavDeu">Deutch</span></a></li>
+<li><a id="navFra" href="#" class="language"><img id="imgNavFra" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavFra">Francais</span></a></li>
+<li><a id="navEng" href="#" class="language"><img id="imgNavEng" src="" alt="..." class="img-thumbnail icon-small"><span id="lanNavEng">English</span></a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+    <ul class="nav navbar-nav">
+      <li><a class="active" href="#" style="color: rgba(12, 155, 243, 0.97);">Home</a></li>
+      <li><a href="#" style="color: rgba(12, 155, 243, 0.97);">FAQ</a></li>
+      <li><a href="#" style="color: rgba(12, 155, 243, 0.97);">APPs</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="padding-right: 5%;">
+      <li><a href="#"><span style="color: rgba(12, 155, 243, 0.97);" class="fa fa-facebook"></span></a></li>
+      <li><a href="#"><span style="color: rgba(12, 155, 243, 0.97);" class="fa fa-twitter"></span></a></li>
+    </ul>
+
+
+  </div>
+</nav>
+<!-- Navigation bar ends here -->
+
+
+<!-- Logo and news bar -->
+<div class="line1 row">
+
+    <div class="col-md-4">
+          </div>  
+
+   
+      <div class="col-md-4">
+
+        <h1 id="leap">LeAPP</h1>
+          <div class="verticalBar1">
+              <table>
+                  <tr>
+                  <th style="color: black; padding-left: 2%; padding-bottom: 2%;">From here you can download</th>
+                </tr>
+
+                <tr>
+                        <th style="color: black; padding-left: 2%; padding-bottom: 2%;">amazing LeAPP apps that will fit</th>
+                      </tr>
+
+                      <tr>
+                            <th style="color: black; padding-left: 2%; padding-bottom: 2%;">your device, enjoy it!</th>
+                          </tr>
+              </table>
+                    </div>
+        </div>
+
+        
+       </div> 
+
+     <!-- Leapp for the smartphones -->
+
+<h2 class="smartDW">LeAPP for smartphones</h2>
+
+      <div class="smartphone row">
+<div class="sm col-md-4">
+  <img  src="img/android.png" alt="">
+  <h4 class="h4-smartphone"><i class="fa fa-android"></i>LeAPP for Android.</h4>
+  </div>
+
+<div class="sm col-md-4">
+    <img src="img/IOS.png" alt="">
+    <h4 class="h4-smartphone"><i class="fa fa-apple"></i>LeAPP for iPhone/iPad.</h4>
+  </div>
+
+  <div class="sm col-md-4">
+      <img src="img/WP.png" alt="">
+    <h4 class="h4-smartphone"><i class="fa fa-windows"></i>LeAPP for Windows Phone.</h4>
+    </div>
+      </div>
+
+      
+        <hr class="hor-line-apps">
+
+
+      </div>
+
+
+      <h2 class="smartDW">LeAPP for smartphones</h2>
+
+      <div class="laptop row">
+          
+                  <div class="lp col-md-4">
+                      <img src="img/mac.png" alt="">
+                      <h4>Mac OS</h4>
+                  </div>
+                  
+                  <div class="lp col-md-4">
+                      <img src="img/laptop.png" alt="">
+                      <h4>Windows</h4>
+                              </div>
+          
+                              <div class="lp col-md-4">
+                                  <img src="img/linux.png" alt="">
+                                  <h4>Linux</h4>
+                                          </div>
+          
+                </div>
+
+            
+
+            
+                                         <hr id="end">
+
+                                         <footer class="footer-distributed">
+                                                
+                                                            <div class="footer-left">
+                                                
+                                                                
+                                                
+                                                                <p class="footer-links">
+                                                                    <a href="#">Home</a>
+                                                                    ·
+                                                                    <a href="#">Blog</a>
+                                                                    ·
+                                                                    <a href="#">Pricing</a>
+                                                                    ·
+                                                                    <a href="#">About</a>
+                                                                    ·
+                                                                    <a href="#">FAQ</a>
+                                                                    ·
+                                                                    <a href="#">Contact</a>
+                                                                </p>
+                                                
+                                                                <p class="footer-company-name">LeAPP &copy; 2017</p>
+                                                
+                                                                <div class="footer-icons">
+                                                
+                                                                    <a href="#"><i class="fa fa-facebook" style="color: rgba(12, 155, 243, 0.97);"></i></a>
+                                                                    <a href="#"><i class="fa fa-twitter" style="color: rgba(12, 155, 243, 0.97);"></i></a>
+                                                                    <a href="#"><i class="fa fa-linkedin" style="color: rgba(12, 155, 243, 0.97);"></i></a>
+                                                                    
+                                                
+                                                                </div>
+                                                
+                                                            </div>
+                                                
+                                                            <div class="footer-right">
+                                                
+                                                                <p>Contact Us</p>
+                                                
+                                                                <form action="#" method="post">
+                                                
+                                                                    <input type="text" name="email" placeholder="Email" />
+                                                                    <textarea name="message" placeholder="Message"></textarea>
+                                                                    <button>Send</button>
+                                                
+                                                                </form>
+                                                
+                                                            </div>
+                                                
+                                                        </footer>
+     
+</body>
+</html>
